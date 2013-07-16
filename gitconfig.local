@@ -1,3 +1,8 @@
 [user]
   name = Rob Whittaker
   email = cyclistsdismount@gmail.com
+[hub]
+  host = github.otbeach.com
+[github "github.otbeach.com"]
+  user = robert.whittaker
+  token = fcb9d0551f00e725281cd743f708a3ea0fb2390b
