@@ -1,6 +1,9 @@
 # Initialise rbenv, if it's installed.
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+# Initialise rvm, if it's installed.
+[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+
 # Add Homebrew directory to the PATH.
 export PATH="/usr/local/bin:$PATH"
 
