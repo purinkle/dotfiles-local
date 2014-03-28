@@ -29,3 +29,7 @@ set-option -g display-panes-colour brightred #orange
 
 # clock
 set-window-option -g clock-mode-colour green #green
+
+# enable copy-paste http://goo.gl/DN82E
+# enable RubyMotion http://goo.gl/WDlCy
+set -g default-command 'reattach-to-user-namespace -l zsh'
