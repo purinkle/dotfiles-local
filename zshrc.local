@@ -4,11 +4,12 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # Initialise rvm, if it's installed.
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 
-# Add Homebrew directory to the PATH.
-export PATH="/usr/local/bin:$PATH"
+# Add all of the directories to the PATH.
+export PATH="/usr/local/bin:$PATH:/usr/local/lib/node_modules:$HOME/.rvm/bin"
 
-# OTB settings
+# OTB settings.
 [[ -f ~/.otb ]] && source ~/.otb
-export PATH="$PATH:/usr/local/lib/node_modules"
+
+# Set up Node.
 source $(brew --prefix nvm)/nvm.sh
 nvm use "0.10.28" > /dev/null
