@@ -12,4 +12,3 @@ export PATH="/usr/local/bin:$PATH:/usr/local/lib/node_modules:$HOME/.rvm/bin"
 
 # Set up Node.
 source $(brew --prefix nvm)/nvm.sh
-nvm use "0.10.28" > /dev/null
