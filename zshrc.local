@@ -1,11 +1,11 @@
+# Add all of the directories to the PATH.
+export PATH="/usr/local/bin:$HOME/.rbenv/bin:$PATH:/usr/local/lib/node_modules:$HOME/.rvm/bin"
+
 # Initialise rbenv, if it's installed.
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh --no-rehash)"; fi
 
 # Initialise rvm, if it's installed.
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
-
-# Add all of the directories to the PATH.
-export PATH="/usr/local/bin:$PATH:/usr/local/lib/node_modules:$HOME/.rvm/bin"
 
 # OTB settings.
 [[ -f ~/.otb ]] && source ~/.otb
