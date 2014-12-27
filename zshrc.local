@@ -1,6 +1,3 @@
-# Add all of the directories to the PATH.
-export PATH="/usr/local/bin:$HOME/.rbenv/bin:$PATH:/usr/local/lib/node_modules:$HOME/.rvm/bin"
-
 # Initialise rvm, if it's installed.
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 
@@ -9,3 +6,7 @@ export PATH="/usr/local/bin:$HOME/.rbenv/bin:$PATH:/usr/local/lib/node_modules:$
 
 # Set up Node.
 source $(brew --prefix nvm)/nvm.sh
+
+export PATH="$HOME/.bin:$PATH"
+
+export PATH="$PATH:/usr/local/lib/node_modules"
