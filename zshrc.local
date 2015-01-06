@@ -10,4 +10,8 @@ source $(brew --prefix nvm)/nvm.sh
 export PATH="$HOME/.bin:$PATH"
 
 export PATH="$PATH:/usr/local/lib/node_modules"
+
+# load rbenv if available
+if which rbenv &>/dev/null ; then
 eval "$(rbenv init - zsh --no-rehash)"
+fi
