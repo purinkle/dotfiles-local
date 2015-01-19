@@ -1,6 +1,3 @@
-# Initialise rvm, if it's installed.
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
-
 # OTB settings.
 [[ -f ~/.otb ]] && source ~/.otb
 
