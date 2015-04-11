@@ -1,9 +1,7 @@
 # OTB settings.
 [[ -f ~/.otb ]] && source ~/.otb
 
-export PATH="$HOME/.bin:$PATH"
-
-export PATH="$PATH:/usr/local/lib/node_modules"
+export PATH="/usr/local/bin:$HOME/.bin:$PATH:/user/local/lib/node_modules"
 
 # load rbenv if available
 if which rbenv &>/dev/null ; then
