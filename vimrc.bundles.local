@@ -1,1 +1,1 @@
-Bundle 'altercation/vim-colors-solarized'
+Plug 'altercation/vim-colors-solarized'
