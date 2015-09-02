@@ -2,3 +2,4 @@ set background=dark
 colorscheme solarized
 
 set relativenumber
+set scrolloff=999
