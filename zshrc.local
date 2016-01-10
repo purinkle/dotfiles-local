@@ -4,7 +4,4 @@
 export PATH="/usr/local/bin:$PATH:/user/local/lib/node_modules"
 export PATH="$HOME/.bin:$PATH"
 
-# load rbenv if available
-if which rbenv &>/dev/null ; then
-  eval "$(rbenv init - --no-rehash zsh)"
-fi
+eval "$(rbenv init - --no-rehash)"
