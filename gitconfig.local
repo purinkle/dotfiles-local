@@ -6,3 +6,5 @@
 [github "github.otbeach.com"]
   user = robert.whittaker
   token = fcb9d0551f00e725281cd743f708a3ea0fb2390b
+[core]
+  excludesfile = .env
