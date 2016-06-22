@@ -5,6 +5,7 @@ export PATH="/usr/local/bin:$PATH:/user/local/lib/node_modules"
 export PATH="$HOME/.bin:$PATH"
 
 eval "$(rbenv init - --no-rehash)"
+
 # Base16 Shell
-BASE16_SHELL="$HOME/.config.local/base16-shell/base16-eighties.dark.sh"
- source $BASE16_SHELL
+BASE16_SHELL="$HOME/.config.local/base16-shell/base16-eighties.light.sh"
+source $BASE16_SHELL
