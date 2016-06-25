@@ -179,6 +179,16 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 # Add a context menu item for showing the Web Inspector in web views
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
+###############################################################################
+# Terminal & iTerm 2                                                          #
+###############################################################################
+
+# Install the Base16 Eighties Dark theme for iTerm
+open "${HOME}/.init.local/base16-eighties.dark.256.itermcolors"
+
+# Don’t display the annoying prompt when quitting iTerm
+defaults write com.googlecode.iterm2 PromptOnQuit -bool false
+
 
 ###############################################################################
 # Kill affected applications                                                  #
