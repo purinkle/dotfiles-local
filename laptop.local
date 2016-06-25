@@ -3,5 +3,3 @@
 brew bundle --file=- <<EOF
 cask "dropbox"
 EOF
-
-source "$HOME/.macos.local"
