@@ -1,5 +1,5 @@
 let base16colorspace=256
-set background=light
+set background=dark
 colorscheme base16-default
 
 set scrolloff=999
