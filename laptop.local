@@ -2,4 +2,5 @@
 
 brew bundle --file=- <<EOF
 cask "dropbox"
+cask "things"
 EOF
