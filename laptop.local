@@ -3,5 +3,6 @@
 brew bundle --file=- <<EOF
 cask "dropbox"
 cask "fluid"
+cask "spotify"
 cask "things"
 EOF
