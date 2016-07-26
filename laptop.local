@@ -2,6 +2,7 @@
 
 brew bundle --file=- <<EOF
 cask "chitchat"
+cask "doxie"
 cask "dropbox"
 cask "fluid"
 cask "google-chrome"
