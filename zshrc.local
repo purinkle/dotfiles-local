@@ -9,3 +9,5 @@ eval "$(rbenv init - --no-rehash)"
 # Base16 Shell
 BASE16_SHELL="$HOME/.config.local/base16-shell/base16-eighties.dark.sh"
 source $BASE16_SHELL
+
+PS1='${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%c%{$reset_color%}$(git_prompt_info) 🐼  '
