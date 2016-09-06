@@ -336,6 +336,13 @@ defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
 defaults write com.apple.mail SpellCheckingBehavior -string "NoSpellCheckingEnabled"
 
 ###############################################################################
+# Spotify                                                                     #
+###############################################################################
+
+# Stop Spotify from going to sleep
+defaults write com.spotify.client NSAppSleepDisabled -bool YES
+
+###############################################################################
 # Terminal & iTerm 2                                                          #
 ###############################################################################
 
