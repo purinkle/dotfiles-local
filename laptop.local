@@ -10,5 +10,4 @@ cask "libreoffice"
 cask "money"
 cask "spotify"
 cask "things"
-cask "whatsapp"
 EOF
