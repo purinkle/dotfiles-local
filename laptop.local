@@ -1,6 +1,7 @@
 #!/bin/sh
 
 brew bundle --file=- <<EOF
+cask "caffeine"
 cask "doxie"
 cask "dropbox"
 cask "fluid"
