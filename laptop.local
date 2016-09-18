@@ -11,4 +11,5 @@ cask "libreoffice"
 cask "money"
 cask "spotify"
 cask "things"
+cask "tower"
 EOF
