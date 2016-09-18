@@ -4,6 +4,7 @@ brew bundle --file=- <<EOF
 cask "caffeine"
 cask "doxie"
 cask "dropbox"
+cask "evernote"
 cask "fluid"
 cask "google-chrome"
 cask "libreoffice"
