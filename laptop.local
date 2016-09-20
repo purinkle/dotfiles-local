@@ -1,6 +1,8 @@
 #!/bin/sh
 
 brew bundle --file=- <<EOF
+brew "nginx"
+
 cask "caffeine"
 cask "doxie"
 cask "dropbox"
