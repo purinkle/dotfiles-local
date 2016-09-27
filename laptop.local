@@ -5,6 +5,7 @@ brew upgrade
 
 brew bundle --file=- <<EOF
 cask "caffeine"
+cask "dropbox"
 cask "insomniax"
 cask "rescuetime"
 EOF
