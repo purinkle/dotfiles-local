@@ -1,9 +1,10 @@
-# OTB settings.
-[[ -f ~/.otb ]] && source ~/.otb
+#!/usr/bin/env zsh
 
-export PATH="/usr/local/bin:$PATH:/user/local/lib/node_modules"
+# Ruby
+# eval "$(rbenv init - --no-rehash)"
+
+# thoughtbot/laptop
 export PATH="$HOME/.bin:$PATH"
 
-eval "$(rbenv init - --no-rehash)"
-
+# Prompt
 PS1='${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%c%{$reset_color%}$(git_prompt_info) 🐼  '
