@@ -14,6 +14,7 @@ cask "insomniax"
 cask "quitter"
 cask "rescuetime"
 cask "spotify"
+cask "tower"
 EOF
 
 fancy_echo "Cleaning up old Homebrew formulae..."
