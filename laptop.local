@@ -15,6 +15,7 @@ cask "quitter"
 cask "rescuetime"
 cask "spotify"
 cask "tower"
+cask "viscosity"
 EOF
 
 fancy_echo "Cleaning up old Homebrew formulae..."
