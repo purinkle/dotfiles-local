@@ -16,6 +16,7 @@ cask "rescuetime"
 cask "spotify"
 cask "tower"
 cask "viscosity"
+cask "whatsapp"
 EOF
 
 fancy_echo "Cleaning up old Homebrew formulae..."
