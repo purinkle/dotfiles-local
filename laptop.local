@@ -7,7 +7,6 @@ brew bundle --file=- <<EOF
 tap "homebrew/versions"
 
 brew "mysql56"
-brew "nginx"
 
 cask "alfred"
 cask "bartender"
