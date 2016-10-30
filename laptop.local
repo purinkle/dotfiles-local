@@ -23,7 +23,6 @@ cask "rescuetime"
 cask "sequel-pro"
 cask "spotify"
 cask "tower"
-cask "viscosity"
 cask "whatsapp"
 EOF
 
