@@ -4,10 +4,6 @@ fancy_echo "Upgrading Homebrew formulae ..."
 brew upgrade
 
 brew bundle --file=- <<EOF
-tap "homebrew/versions"
-
-brew "mysql56"
-
 cask "alfred"
 cask "bartender"
 cask "caffeine"
