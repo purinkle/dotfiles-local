@@ -1,3 +1,6 @@
+[commit]
+  gpgsign = true
 [user]
   name = Rob Whittaker
   email = cyclistsdismount@gmail.com
+  signingkey = Rob Whittaker <rob@purinkle.co.uk>
