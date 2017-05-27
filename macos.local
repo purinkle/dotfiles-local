@@ -94,3 +94,6 @@ defaults write com.apple.CrashReporter DialogType -string "none"
 
 # Set Help Viewer windows to non-floating mode
 defaults write com.apple.helpviewer DevMode -bool true
+
+# Fix for the ancient UTF-8 bug in QuickLook
+echo "0x08000100:0" > ~/.CFUserTextEncoding
