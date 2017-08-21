@@ -1,6 +1,0 @@
-colorscheme base16-default-dark
-
-set relativenumber
-set scrolloff=999
-
-let g:syntastic_ruby_checkers = ['rubocop']
