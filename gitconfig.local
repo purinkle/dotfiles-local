@@ -4,5 +4,5 @@
   program = gpg2
 [user]
   name = Rob Whittaker
-  email = cyclistsdismount@gmail.com
   signingkey = Rob Whittaker <rob@purinkle.co.uk>
+  useConfigOnly = true
