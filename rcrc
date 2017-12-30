@@ -1,2 +1,0 @@
-DOTFILES_DIRS="$HOME/src/github.com/purinkle/dotfiles $HOME/src/github.com/thoughtbot/dotfiles"
-EXCLUDES="README.md"

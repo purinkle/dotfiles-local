@@ -1,9 +1,0 @@
-#!/usr/bin/env zsh
-
-# Ruby
-# eval "$(rbenv init - --no-rehash)"
-
-# thoughtbot/laptop
-export PATH="$HOME/.bin:$PATH"
-
-source /Users/purinkle/.asdf/asdf.sh
