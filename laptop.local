@@ -8,6 +8,7 @@ cask "alfred"
 cask "cleanmymac"
 cask "firefox"
 cask "iterm2"
+cask "spotify"
 EOF
 
 fancy_echo "Cleaning up old Homebrew formulae..."
