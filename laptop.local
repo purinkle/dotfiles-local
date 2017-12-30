@@ -5,6 +5,7 @@ brew upgrade
 
 brew bundle --file=- <<EOF
 cask "alfred"
+cask "cleanmymac"
 EOF
 
 fancy_echo "Cleaning up old Homebrew formulae..."
