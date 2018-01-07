@@ -11,6 +11,7 @@ cask "dropbox"
 cask "firefox"
 cask "iterm2"
 cask "slack"
+cask "spectacle"
 cask "spotify"
 EOF
 
