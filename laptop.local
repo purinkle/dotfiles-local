@@ -7,6 +7,7 @@ brew bundle --file=- <<EOF
 brew "watchman"
 
 cask "alfred"
+cask "android-studio"
 cask "cleanmymac"
 cask "doxie"
 cask "dropbox"
