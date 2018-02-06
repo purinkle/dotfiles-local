@@ -6,6 +6,7 @@ brew upgrade
 brew bundle --file=- <<EOF
 brew "watchman"
 
+cask "abstract"
 cask "alfred"
 cask "android-studio"
 cask "cleanmymac"
