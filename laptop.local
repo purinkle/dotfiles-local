@@ -4,12 +4,14 @@ fancy_echo "Upgrading Homebrew formulae ..."
 brew upgrade
 
 brew bundle --file=- <<EOF
+brew "docker"
 brew "watchman"
 
 cask "abstract"
 cask "alfred"
 cask "android-studio"
 cask "cleanmymac"
+cask "docker"
 cask "doxie"
 cask "dropbox"
 cask "firefox"
