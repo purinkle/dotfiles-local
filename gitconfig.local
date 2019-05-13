@@ -4,3 +4,5 @@
   name = Rob Whittaker
   signingKey = Rob Whittaker <rob@purinkle.co.uk>
   useConfigOnly = true
+[gpg]
+  program = /usr/local/bin/gpg
