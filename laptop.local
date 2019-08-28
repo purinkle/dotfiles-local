@@ -25,7 +25,6 @@ cask "slack"
 cask "spectacle"
 cask "spotify"
 cask "tower"
-cask "whatsapp"
 EOF
 
 fancy_echo "Cleaning up old Homebrew formulae..."
