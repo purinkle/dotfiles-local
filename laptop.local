@@ -5,6 +5,7 @@ brew upgrade
 
 brew bundle --file=- <<EOF
 brew "docker"
+brew "jq"
 brew "watchman"
 
 cask "alfred"
