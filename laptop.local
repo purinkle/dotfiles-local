@@ -4,8 +4,11 @@ fancy_echo "Upgrading Homebrew formulae ..."
 brew upgrade
 
 brew bundle --file=- <<EOF
+tap "mas-cli/tap"
+
 brew "docker"
 brew "jq"
+brew "mas"
 brew "watchman"
 
 cask "alfred"
@@ -23,6 +26,8 @@ cask "sketch"
 cask "spectacle"
 cask "spotify"
 cask "tower"
+
+mas "Better", id: 1121192229
 EOF
 
 fancy_echo "Cleaning up old Homebrew formulae..."
