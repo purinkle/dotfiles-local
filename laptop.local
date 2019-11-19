@@ -6,6 +6,7 @@ brew upgrade
 brew bundle --file=- <<EOF
 tap "mas-cli/tap"
 
+brew "cocoapods"
 brew "docker"
 brew "jq"
 brew "mas"
