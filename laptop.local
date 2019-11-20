@@ -12,6 +12,7 @@ brew "jq"
 brew "mas"
 brew "watchman"
 
+cask "abstract"
 cask "alfred"
 cask "cleanmymac"
 cask "dash"
