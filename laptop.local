@@ -4,6 +4,7 @@ fancy_echo "Upgrading Homebrew formulae ..."
 brew upgrade
 
 brew bundle --file=- <<EOF
+tap "AdoptOpenJDK/openjdk"
 tap "mas-cli/tap"
 
 brew "cocoapods"
@@ -13,6 +14,7 @@ brew "mas"
 brew "watchman"
 
 cask "abstract"
+cask "adoptopenjdk8"
 cask "alfred"
 cask "cleanmymac"
 cask "dash"
