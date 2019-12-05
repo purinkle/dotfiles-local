@@ -33,6 +33,7 @@ cask "tower"
 
 mas "1Password 7", id: 1333542190
 mas "Better", id: 1121192229
+mas "Fantastical", id: 975937182
 mas "FruitJuice", id: 671736912
 mas "Things", id: 904280696
 EOF
