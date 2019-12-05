@@ -33,6 +33,7 @@ cask "tower"
 
 mas "1Password 7", id: 1333542190
 mas "Better", id: 1121192229
+mas "FruitJuice", id: 671736912
 EOF
 
 fancy_echo "Cleaning up old Homebrew formulae..."
