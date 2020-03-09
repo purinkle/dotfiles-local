@@ -1,9 +1,3 @@
-#!/bin/sh
-
-fancy_echo "Upgrading Homebrew formulae ..."
-brew upgrade
-
-brew bundle --file=- <<EOF
 tap "AdoptOpenJDK/openjdk"
 tap "mas-cli/tap"
 
@@ -54,7 +48,3 @@ mas "Reeder", id: 880001334
 mas "Things", id: 904280696
 mas "Trello", id: 1278508951
 mas "Tweetbot", id: 557168941
-EOF
-
-fancy_echo "Cleaning up old Homebrew formulae..."
-brew cleanup
