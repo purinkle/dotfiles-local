@@ -5,6 +5,7 @@ brew "cocoapods"
 brew "docker"
 brew "jq"
 brew "mas"
+brew "reattach-to-user-namespace"
 brew "watchman"
 
 cask "abstract"
