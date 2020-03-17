@@ -7,6 +7,7 @@ brew "jq"
 brew "mas"
 brew "reattach-to-user-namespace"
 brew "tmux"
+brew "vim"
 brew "watchman"
 
 cask "abstract"
