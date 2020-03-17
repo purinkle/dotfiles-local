@@ -3,6 +3,7 @@ tap "mas-cli/tap"
 
 brew "cocoapods"
 brew "docker"
+brew "hub"
 brew "jq"
 brew "mas"
 brew "reattach-to-user-namespace"
