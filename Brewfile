@@ -1,11 +1,13 @@
 tap "AdoptOpenJDK/openjdk"
 tap "mas-cli/tap"
+tap "thoughtbot/formulae"
 
 brew "cocoapods"
 brew "docker"
 brew "hub"
 brew "jq"
 brew "mas"
+brew "rcm"
 brew "reattach-to-user-namespace"
 brew "tmux"
 brew "vim"
