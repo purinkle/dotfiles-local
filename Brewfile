@@ -6,6 +6,7 @@ brew "docker"
 brew "jq"
 brew "mas"
 brew "reattach-to-user-namespace"
+brew "tmux"
 brew "watchman"
 
 cask "abstract"
