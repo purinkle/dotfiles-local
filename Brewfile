@@ -9,6 +9,7 @@ brew "reattach-to-user-namespace"
 brew "tmux"
 brew "vim"
 brew "watchman"
+brew "zsh"
 
 cask "abstract"
 cask "adoptopenjdk8"
