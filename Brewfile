@@ -3,6 +3,7 @@ tap "mas-cli/tap"
 tap "thoughtbot/formulae"
 
 brew "cocoapods"
+brew "coreutils"
 brew "docker"
 brew "hub"
 brew "jq"
