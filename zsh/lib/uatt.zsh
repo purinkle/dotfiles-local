@@ -3,6 +3,7 @@
 uatt() {
   local SEPERATOR="====================="
   brew bundle --global
+  brew bundle --global cleanup --force
   brew update
   brew upgrade
   brew cask upgrade
