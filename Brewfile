@@ -49,6 +49,7 @@ cask "spotify"
 cask "tower"
 cask "tuple"
 cask "whatsapp"
+cask "zoomus"
 
 mas "1Password 7", id: 1333542190
 mas "Better", id: 1121192229
