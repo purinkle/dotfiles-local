@@ -18,6 +18,7 @@ brew "parity"
 brew "postgresql", restart_service: true
 brew "rcm"
 brew "reattach-to-user-namespace"
+brew "the_silver_searcher"
 brew "tmux"
 brew "vim"
 brew "watchman"
