@@ -48,7 +48,7 @@ cask "spectacle"
 cask "spotify"
 cask "tower"
 cask "tuple"
-cask "vscode"
+cask "visual-studio-code"
 cask "whatsapp"
 cask "zoomus"
 
