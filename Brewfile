@@ -60,4 +60,3 @@ mas "FruitJuice", id: 671736912
 mas "Reeder", id: 880001334
 mas "Things", id: 904280696
 mas "Trello", id: 1278508951
-mas "Tweetbot", id: 557168941
