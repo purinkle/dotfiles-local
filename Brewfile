@@ -25,6 +25,7 @@ brew "watchman"
 brew "yarn"
 brew "zsh"
 
+cask "abstract"
 cask "adoptopenjdk8"
 cask "alfred"
 cask "android-studio"
