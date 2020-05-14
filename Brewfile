@@ -15,6 +15,7 @@ brew "jq"
 brew "krb5"
 brew "mas"
 brew "parity"
+brew "postgis"
 brew "postgresql", restart_service: true
 brew "rcm"
 brew "reattach-to-user-namespace"
