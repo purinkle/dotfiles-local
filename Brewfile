@@ -5,6 +5,7 @@ tap "homebrew/services"
 tap "mas-cli/tap"
 tap "thoughtbot/formulae"
 
+brew "awscli"
 brew "cocoapods"
 brew "coreutils"
 brew "docker"
