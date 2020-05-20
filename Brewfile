@@ -1,24 +1,22 @@
-tap "AdoptOpenJDK/openjdk"
+tap "adoptopenjdk/openjdk"
 tap "heroku/brew"
+tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/core"
 tap "homebrew/services"
 tap "mas-cli/tap"
 tap "thoughtbot/formulae"
-
+brew "openssl@1.1"
+brew "xz"
 brew "awscli"
 brew "cocoapods"
 brew "coreutils"
 brew "docker"
 brew "git"
-brew "heroku/brew/heroku"
 brew "hub"
 brew "jq"
-brew "krb5"
 brew "mas"
-brew "parity"
 brew "postgis"
-brew "postgresql", restart_service: true
-brew "rcm"
 brew "reattach-to-user-namespace"
 brew "the_silver_searcher"
 brew "tmux"
@@ -26,7 +24,9 @@ brew "vim"
 brew "watchman"
 brew "yarn"
 brew "zsh"
-
+brew "heroku/brew/heroku"
+brew "thoughtbot/formulae/parity"
+brew "thoughtbot/formulae/rcm"
 cask "abstract"
 cask "adoptopenjdk8"
 cask "alfred"
@@ -34,6 +34,7 @@ cask "android-studio"
 cask "bartender"
 cask "cleanmymac"
 cask "dash"
+cask "discord"
 cask "docker"
 cask "doxie"
 cask "dropbox"
@@ -53,10 +54,13 @@ cask "tuple"
 cask "visual-studio-code"
 cask "whatsapp"
 cask "zoomus"
-
 mas "1Password 7", id: 1333542190
+mas "Bear", id: 1091189122
 mas "Better", id: 1121192229
 mas "Fantastical", id: 975937182
 mas "FruitJuice", id: 671736912
+mas "Gifox", id: 1461845568
+mas "Grammarly for Safari", id: 1462114288
 mas "Reeder", id: 880001334
 mas "Things", id: 904280696
+mas "Xcode", id: 497799835
