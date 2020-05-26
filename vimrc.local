@@ -1,5 +1,12 @@
 set scrolloff=999
 
-let g:ale_fixers = {}
-let g:ale_fixers['javascript'] = ['prettier', 'eslint']
+let g:ale_linters = {
+\  'javascript': ['eslint'],
+\  'ruby': ['standardrb'],
+\}
+let g:ale_fixers = {
+\  '*': ['remove_trailing_lines', 'trim_whitespace'],
+\  'javascript': ['eslint'],
+\  'ruby': ['standardrb'],
+\}
 let g:ale_fix_on_save = 1
