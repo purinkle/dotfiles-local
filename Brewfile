@@ -19,6 +19,7 @@ brew "jq"
 brew "mas"
 brew "postgis"
 brew "reattach-to-user-namespace"
+brew "redis", restart_service: true
 brew "the_silver_searcher"
 brew "tmux"
 brew "vim"
