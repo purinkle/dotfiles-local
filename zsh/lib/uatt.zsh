@@ -6,7 +6,7 @@ uatt() {
   brew bundle --global cleanup --force
   brew update
   brew upgrade
-  brew cask upgrade
+  brew upgrade --cask
   echo $SEPERATOR
   rcup
   echo "Dotfiles up-to-date"
