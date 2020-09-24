@@ -61,7 +61,6 @@ cask "zoomus"
 mas "1Password 7", id: 1333542190
 mas "Bear", id: 1091189122
 mas "Better", id: 1121192229
-mas "Fantastical", id: 975937182
 mas "FruitJuice", id: 671736912
 mas "Gifox", id: 1461845568
 mas "Grammarly for Safari", id: 1462114288
