@@ -60,7 +60,7 @@ cask "tower"
 cask "tuple"
 cask "visual-studio-code"
 cask "whatsapp"
-cask "zoomus"
+cask "zoom"
 mas "1Password 7", id: 1333542190
 mas "Bear", id: 1091189122
 mas "Better", id: 1121192229
