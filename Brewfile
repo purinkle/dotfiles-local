@@ -58,7 +58,6 @@ cask "spectacle"
 cask "spotify"
 cask "tower"
 cask "tuple"
-cask "visual-studio-code"
 cask "whatsapp"
 cask "zoom"
 mas "1Password 7", id: 1333542190
