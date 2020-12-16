@@ -66,6 +66,5 @@ mas "Better", id: 1121192229
 mas "FruitJuice", id: 671736912
 mas "Gifox", id: 1461845568
 mas "Grammarly for Safari", id: 1462114288
-mas "Reeder", id: 880001334
 mas "Things", id: 904280696
 mas "Xcode", id: 497799835
