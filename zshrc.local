@@ -9,4 +9,5 @@ for function in ~/.zsh/lib/*; do
   source $function
 done
 
+export PATH="/usr/local/opt/terraform@0.12/bin:$PATH"
 export PATH="$HOME/.bin:$PATH"

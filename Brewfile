@@ -27,6 +27,7 @@ brew "postgresql", restart_service: true
 brew "postgis"
 brew "reattach-to-user-namespace"
 brew "redis", restart_service: true
+brew "terraform@0.12"
 brew "the_silver_searcher"
 brew "tmux"
 brew "vim"
