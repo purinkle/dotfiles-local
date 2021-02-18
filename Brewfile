@@ -63,6 +63,7 @@ cask "tower"
 cask "tuple"
 cask "whatsapp"
 cask "zoom"
+mas "1Blocker", id: 1107421413
 mas "1Password 7", id: 1333542190
 mas "Bear", id: 1091189122
 mas "FruitJuice", id: 671736912
