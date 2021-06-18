@@ -63,6 +63,7 @@ cask "slack"
 cask "spotify"
 cask "tower"
 cask "tuple"
+cask "vlc"
 cask "whatsapp"
 cask "zoom"
 mas "1Blocker", id: 1365531024
