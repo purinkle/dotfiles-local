@@ -42,7 +42,6 @@ brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
 cask "abstract"
 cask "adoptopenjdk8"
 cask "alfred"
-cask "android-studio"
 cask "bartender"
 cask "basecamp"
 cask "cleanmymac"
