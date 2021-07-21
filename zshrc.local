@@ -11,3 +11,4 @@ done
 
 export PATH="/usr/local/opt/terraform@0.12/bin:$PATH"
 export PATH="$HOME/.bin:$PATH"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
