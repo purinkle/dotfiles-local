@@ -73,6 +73,5 @@ mas "1Password 7", id: 1333542190
 mas "Bear", id: 1091189122
 mas "FruitJuice", id: 671736912
 mas "Gifox", id: 1461845568
-mas "Grammarly for Safari", id: 1462114288
 mas "Things", id: 904280696
 mas "Xcode", id: 497799835
