@@ -18,6 +18,7 @@ brew "hub"
 brew "imagemagick"
 brew "jq"
 brew "mas"
+brew "php"
 brew "postgis"
 brew "reattach-to-user-namespace"
 brew "redis", restart_service: true
