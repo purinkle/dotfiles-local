@@ -33,7 +33,6 @@ brew "thoughtbot/formulae/gitsh"
 brew "thoughtbot/formulae/parity"
 brew "thoughtbot/formulae/rcm"
 brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
-cask "abstract"
 cask "adoptopenjdk8"
 cask "alfred"
 cask "bartender"
