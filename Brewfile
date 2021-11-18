@@ -36,7 +36,6 @@ brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
 cask "adoptopenjdk8"
 cask "alfred"
 cask "bartender"
-cask "basecamp"
 cask "cleanmymac"
 cask "dash"
 cask "discord"
