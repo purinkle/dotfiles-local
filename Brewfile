@@ -57,6 +57,7 @@ cask "tower"
 cask "transmission"
 cask "tuple"
 cask "vlc"
+cask "whatsapp"
 cask "zoom"
 mas "1Blocker", id: 1365531024
 mas "1Password 7", id: 1333542190
