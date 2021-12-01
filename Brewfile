@@ -35,7 +35,6 @@ brew "thoughtbot/formulae/rcm"
 brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
 cask "adoptopenjdk8"
 cask "alfred"
-cask "bartender"
 cask "cleanmymac"
 cask "dash"
 cask "doxie"
