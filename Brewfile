@@ -56,6 +56,5 @@ cask "zoom"
 mas "1Blocker", id: 1365531024
 mas "1Password 7", id: 1333542190
 mas "Bear", id: 1091189122
-mas "FruitJuice", id: 671736912
 mas "Things", id: 904280696
 mas "Xcode", id: 497799835
