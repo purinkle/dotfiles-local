@@ -11,7 +11,6 @@ brew "coreutils"
 brew "gh"
 brew "git"
 brew "imagemagick"
-brew "jq"
 brew "mas"
 brew "openssl@3"
 brew "php", restart_service: true
