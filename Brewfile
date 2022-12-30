@@ -12,6 +12,7 @@ brew "gh"
 brew "git"
 brew "imagemagick"
 brew "mas"
+brew "mysql"
 brew "openssl@3"
 brew "php", restart_service: true
 brew "poppler"
