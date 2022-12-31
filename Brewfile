@@ -16,7 +16,6 @@ brew "mysql"
 brew "openssl@3"
 brew "php", restart_service: true
 brew "poppler"
-brew "postgis"
 brew "rcm"
 brew "reattach-to-user-namespace"
 brew "redis", restart_service: true
