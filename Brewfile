@@ -14,7 +14,7 @@ brew "imagemagick"
 brew "mas"
 brew "mysql"
 brew "openssl@3"
-brew "php", restart_service: true
+brew "php"
 brew "poppler"
 brew "postgresql@14"
 brew "rcm"
