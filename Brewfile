@@ -19,7 +19,7 @@ brew "poppler"
 brew "postgresql@14"
 brew "rcm"
 brew "reattach-to-user-namespace"
-brew "redis", restart_service: true
+brew "redis"
 brew "the_silver_searcher"
 brew "tmux"
 brew "universal-ctags", args: ["HEAD"]
