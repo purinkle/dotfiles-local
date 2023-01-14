@@ -1,5 +1,7 @@
 [commit]
   gpgsign = true
+[rebase]
+  updateRefs = true
 [user]
   name = Rob Whittaker
   signingKey = Rob Whittaker <rob@purinkle.co.uk>
