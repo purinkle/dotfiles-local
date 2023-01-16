@@ -42,7 +42,6 @@ cask "spotify"
 cask "tuple"
 cask "whatsapp"
 cask "zoom"
-mas "1Password 7", id: 1333542190
 mas "Bear", id: 1091189122
 mas "Things", id: 904280696
 mas "Tweetbot", id: 1384080005
