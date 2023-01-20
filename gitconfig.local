@@ -1,3 +1,5 @@
+[alias]
+  branches = for-each-ref --sort=-committerdate --format=\"%(color:blue)%(authordate:relative)\t%(color:red)%(authorname)\t%(color:black)%(color:bold)%(refname:short)\" refs/remotes
 [commit]
   gpgsign = true
 [rebase]
