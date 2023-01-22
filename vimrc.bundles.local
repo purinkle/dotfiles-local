@@ -1,2 +1,3 @@
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'takac/vim-hardtime'
+Plug 'NLKNguyen/papercolor-theme'
