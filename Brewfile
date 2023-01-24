@@ -47,5 +47,4 @@ mas "1Blocker", id: 1365531024
 mas "1Password for Safari", id: 1569813296
 mas "Bear", id: 1091189122
 mas "Things", id: 904280696
-mas "Tweetbot", id: 1384080005
 mas "Xcode", id: 497799835
