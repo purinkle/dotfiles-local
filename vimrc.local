@@ -8,8 +8,6 @@ let g:ale_fixers = {
 \  'ruby': ['standardrb'],
 \}
 let g:ale_fix_on_save = 1
-
-colorscheme dracula
 let g:hardtime_default_on = 1
 set t_Co=256
 set background=light
