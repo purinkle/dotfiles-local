@@ -10,10 +10,10 @@ let g:ale_fixers = {
 let g:ale_fix_on_save = 1
 let g:hardtime_default_on = 1
 
-" Set up the Solarized (light) colour scheme. We have to set the terminal
-" colours to 256 because it looked wrong with only 16 colours. This is likely
-" related to the fact we are yet to set up Terminal.app to use the same theme.
-let g:solarized_termcolors=256
+" Set up the PaperColor colour scheme. We have to set the terminal colours to
+" 256 because it looked wrong with only 16 colours. This is likely related to
+" the fact we are yet to set up Terminal.app to use the same theme.
+set t_Co=256
 syntax enable
 set background=light
-colorscheme solarized
+colorscheme PaperColor
