@@ -1,4 +1,4 @@
 " Make our colour scheme pretty.
-Plug 'altercation/vim-colors-solarized'
+Plug 'NLKNguyen/papercolor-theme'
 
 Plug 'takac/vim-hardtime'
