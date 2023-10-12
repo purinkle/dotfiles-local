@@ -7,19 +7,16 @@ A set of vim, zsh, git, and tmux configuration files.
 Clone onto your laptop:
 
 ```shell
-git clone git://github.com/purinkle/dotfiles.git ~/dotfiles-local
+git clone https://github.com/purinkle/dotfiles.git ~/dotfiles-local
 ```
 
-Install the dotfiles:
+We expect you to use these dotfiles in conjunction with [thoughtbot's
+dotfiles][]. You will have limited success without that repository.
+
+Once you have cloned the project, run the following command.
 
 ```shell
-env RCRC=$HOME/dotfiles-local/rcrc rcup -v
-```
-
-Update all the things:
-
-```shell
-uatt
+env RCRC=$HOME/dotfiles/rcrc rcup
 ```
 
 From time to time you should pull down any updates to these dotfiles, and run
@@ -38,3 +35,4 @@ Thank you, [contributors][]!
 dotfiles is maintained by Rob Whittaker.
 
 [contributors]: https://github.com/purinkle/dotfiles/graphs/contributors
+[thoughtbot's dotfiles]: https://github.com/thoughtbot/dotfiles
