@@ -2,6 +2,8 @@
 
 A set of vim, zsh, git, and tmux configuration files.
 
+![Screenshot of Rob Whittaker's shell prompt][]
+
 ## Usage
 
 Clone onto your laptop:
@@ -35,4 +37,5 @@ Thank you, [contributors][]!
 dotfiles is maintained by Rob Whittaker.
 
 [contributors]: https://github.com/purinkle/dotfiles/graphs/contributors
+[screenshot of rob whittaker's shell prompt]: https://i.imgur.com/4Jomtn5.png
 [thoughtbot's dotfiles]: https://github.com/thoughtbot/dotfiles
