@@ -1,4 +1,4 @@
-# dotfiles
+# dotfiles-local
 
 A set of vim, zsh, git, and tmux configuration files.
 
@@ -9,7 +9,7 @@ A set of vim, zsh, git, and tmux configuration files.
 Clone onto your laptop:
 
 ```shell
-git clone https://github.com/purinkle/dotfiles.git ~/dotfiles-local
+git clone https://github.com/purinkle/dotfiles-local.git ~/dotfiles-local
 ```
 
 We expect you to use these dotfiles in conjunction with [thoughtbot's
@@ -34,8 +34,8 @@ Thank you, [contributors][]!
 
 ## About
 
-dotfiles is maintained by Rob Whittaker.
+dotfiles-local is maintained by Rob Whittaker.
 
-[contributors]: https://github.com/purinkle/dotfiles/graphs/contributors
+[contributors]: https://github.com/purinkle/dotfiles-local/graphs/contributors
 [screenshot of rob whittaker's shell prompt]: https://i.imgur.com/4Jomtn5.png
 [thoughtbot's dotfiles]: https://github.com/thoughtbot/dotfiles
