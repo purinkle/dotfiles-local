@@ -1,0 +1,10 @@
+version: '2.1'
+
+orbs:
+  shellcheck: circleci/shellcheck@3.1.2
+
+workflows:
+  build:
+    jobs:
+      - shellcheck/check:
+          pattern: "aliases.local"
