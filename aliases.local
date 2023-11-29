@@ -2,3 +2,6 @@
 
 # Easier navigation: .....
 alias .....="cd ../../../.."
+
+# Shortcuts
+alias d="cd ~/Library/CloudStorage/Dropbox"
