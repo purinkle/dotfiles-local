@@ -5,3 +5,4 @@ alias .....="cd ../../../.."
 
 # Shortcuts
 alias d="cd ~/Library/CloudStorage/Dropbox"
+alias dl="cd ~/Downloads"
