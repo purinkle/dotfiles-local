@@ -7,4 +7,4 @@ workflows:
   build:
     jobs:
       - shellcheck/check:
-          pattern: "aliases.local"
+          pattern: "{aliases|zshrc}.local"

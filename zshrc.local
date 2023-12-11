@@ -1,3 +1,7 @@
+#!/usr/bin/env bash
+
+export LSCOLORS="BxBxhxDxfxhxhxhxhxcxcx"
+
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
@@ -6,9 +10,12 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # load custom executable functions
 for function in ~/.zsh/lib/*; do
-  source $function
+  # shellcheck source=/dev/null
+  source "$function"
 done
 
 export PATH="/usr/local/opt/terraform@0.12/bin:$PATH"
 export PATH="$HOME/.bin:$PATH"
+
+# shellcheck source=/dev/null
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
