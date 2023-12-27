@@ -8,3 +8,6 @@ alias p="cd ~/Developer"
 
 # List all files in long format
 alias l="ls -lF"
+
+# List all files colorized in long format, excluding . and ..
+alias la="ls -lAF"
