@@ -11,3 +11,6 @@ alias l="ls -lF"
 
 # List all files colorized in long format, excluding . and ..
 alias la="ls -lAF"
+
+# List only directories
+alias lsd="ls -lF | ag --nocolor '^d'"
