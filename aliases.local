@@ -14,3 +14,6 @@ alias la="ls -lAF"
 
 # List only directories
 alias lsd="ls -lF | ag --nocolor '^d'"
+
+# Enable aliases to be sudo’ed
+alias sudo='sudo '
