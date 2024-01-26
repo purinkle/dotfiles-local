@@ -31,3 +31,6 @@ alias ips="ifconfig -a | ag -o 'inet6? (addr:)?\s?((([0-9]+.){3}[0-9]+)|[a-fA-F0
 
 # Show active network interfaces
 alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
+
+# Flush Directory Service cache
+alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
