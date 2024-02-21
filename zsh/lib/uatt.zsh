@@ -11,7 +11,6 @@ uatt() {
   rcup
   echo "Dotfiles up-to-date"
   echo $SEPERATOR
-  asdf update
   asdf plugin-update --all
   echo $SEPERATOR
   waiter 5
