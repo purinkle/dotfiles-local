@@ -27,6 +27,3 @@ if-shell '[[ $(uname -s) = Darwin ]]' {
 }
 
 if-shell 'test -e /usr/bin/zsh' 'set -g default-shell /usr/bin/zsh'
-
-set-option -g status-left ""
-set-option -g status-right ""
