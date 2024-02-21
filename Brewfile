@@ -41,6 +41,7 @@ cask "microsoft-teams"
 cask "rectangle"
 cask "spotify"
 cask "tuple"
+cask "utm"
 cask "zoom"
 mas "1Blocker", id: 1365531024
 mas "1Password for Safari", id: 1569813296
