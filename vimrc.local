@@ -8,7 +8,6 @@ let g:ale_fixers = {
 \  'ruby': ['standardrb'],
 \}
 let g:ale_fix_on_save = 1
-let g:hardtime_default_on = 1
 
 " Set up the PaperColor colour scheme. We have to set the terminal colours to
 " 256 because it looked wrong with only 16 colours. This is likely related to
