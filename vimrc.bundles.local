@@ -2,3 +2,4 @@
 Plug 'NLKNguyen/papercolor-theme'
 
 Plug 'takac/vim-hardtime'
+Plug 'github/copilot.vim'
