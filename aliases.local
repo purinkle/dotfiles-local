@@ -51,3 +51,6 @@ command -v sha1sum > /dev/null || alias sha1sum="shasum"
 jscbin="/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Helpers/jsc";
 [ -e "${jscbin}" ] && alias jsc="${jscbin}";
 unset jscbin;
+
+# Trim new lines and copy to clipboard
+alias c="tr -d '\n' | pbcopy"
