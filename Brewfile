@@ -1,8 +1,6 @@
 tap "1password/tap"
 tap "heroku/brew"
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
 tap "homebrew/services"
 tap "mas-cli/tap"
 tap "thoughtbot/formulae"
