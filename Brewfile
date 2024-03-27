@@ -33,6 +33,10 @@ cask "1password/tap/1password-cli"
 cask "alfred"
 cask "cleanmymac"
 cask "dash"
+
+# We use Docker to run Elasticsearch for `hub`.
+cask "docker"
+
 cask "dropbox"
 cask "google-chrome"
 cask "gpg-suite-no-mail"
