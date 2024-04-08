@@ -83,3 +83,6 @@ alias mergepdf='gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=_merged.p
 alias spotoff="sudo mdutil -a -i off"
 # Enable Spotlight
 alias spoton="sudo mdutil -a -i on"
+
+# PlistBuddy alias, because sometimes `defaults` just doesn’t cut it
+alias plistbuddy="/usr/libexec/PlistBuddy"
