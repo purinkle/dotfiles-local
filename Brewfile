@@ -42,6 +42,10 @@ cask "docker"
 cask "dropbox"
 cask "google-chrome"
 cask "gpg-suite-no-mail"
+
+# We use Notion for client documentation and task management.
+cask "notion"
+
 cask "rectangle"
 cask "spotify"
 cask "tuple"
