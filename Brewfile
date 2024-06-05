@@ -12,6 +12,10 @@ brew "coreutils"
 brew "gh"
 brew "git"
 brew "imagemagick"
+
+# We use Kafka to pass messages on a client project.
+brew "kafka"
+
 brew "mas"
 brew "mysql"
 brew "openssl@3"
