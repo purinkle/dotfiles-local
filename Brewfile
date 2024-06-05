@@ -21,6 +21,10 @@ brew "mysql"
 brew "openssl@3"
 brew "php"
 brew "poppler"
+
+# We use postgis for geographical data on a client project.
+brew "postgis"
+
 brew "postgresql@14"
 brew "puma-dev"
 brew "rcm"
