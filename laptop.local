@@ -2,14 +2,20 @@
 
 brew update
 brew bundle --file=- <<EOF
+brew "bash"
+brew "bash-completion@2"
 brew "bat"
 brew "btop"
 brew "eza"
+brew "fd"
 brew "fzf"
 brew "httpd"
 brew "jemalloc"
+brew "lazydocker"
+brew "lazygit"
 brew "mupdf-tools"
 brew "mysql-client"
+brew "nvim"
 brew "rbenv"
 brew "ripgrep"
 brew "rust"
@@ -28,3 +34,15 @@ cask "vlc"
 cask "xournal++"
 cask "zoom"
 EOF
+
+if [ "$SHELL" != "/opt/homebrew/bin/bash" ]; then
+  shell_path=$(command -v bash)
+
+  if ! grep "$shell_path" /etc/shells > /dev/null 2>&1; then
+    echo "Adding $shell_path to /etc/shells..."
+    sudo sh -c "echo $shell_path >> /etc/shells"
+  fi
+
+  echo "Changing your shell to Bash..."
+  sudo chsh -s "$shell_path" "$USER" > /dev/null 2>&1
+fi
