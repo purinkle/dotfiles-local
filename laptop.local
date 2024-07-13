@@ -2,6 +2,7 @@
 
 brew update
 brew bundle --file=- <<EOF
+brew "jemalloc"
 brew "rust"
 
 cask "docker"
