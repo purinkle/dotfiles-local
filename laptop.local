@@ -3,6 +3,7 @@
 brew update
 brew bundle --file=- <<EOF
 brew "jemalloc"
+brew "mupdf"
 brew "rust"
 brew "vips"
 
