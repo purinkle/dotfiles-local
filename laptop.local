@@ -5,6 +5,7 @@ brew bundle --file=- <<EOF
 brew "jemalloc"
 brew "mupdf-tools"
 brew "mysql-client"
+brew "rbenv"
 brew "rust"
 brew "vips"
 
