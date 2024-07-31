@@ -2,6 +2,7 @@
 
 brew update
 brew bundle --file=- <<EOF
+brew "httpd"
 brew "jemalloc"
 brew "mupdf-tools"
 brew "mysql-client"
