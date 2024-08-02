@@ -8,6 +8,7 @@ brew "jemalloc"
 brew "mupdf-tools"
 brew "mysql-client"
 brew "rbenv"
+brew "ripgrep"
 brew "rust"
 brew "vips"
 
