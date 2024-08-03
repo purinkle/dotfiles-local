@@ -2,6 +2,7 @@
 
 brew update
 brew bundle --file=- <<EOF
+brew "bat"
 brew "fzf"
 brew "httpd"
 brew "jemalloc"
