@@ -13,6 +13,7 @@ brew "rbenv"
 brew "ripgrep"
 brew "rust"
 brew "vips"
+brew "zoxide"
 
 cask "docker"
 EOF
