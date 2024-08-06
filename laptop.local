@@ -3,6 +3,7 @@
 brew update
 brew bundle --file=- <<EOF
 brew "bat"
+brew "btop"
 brew "eza"
 brew "fzf"
 brew "httpd"
