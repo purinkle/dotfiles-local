@@ -17,4 +17,5 @@ brew "vips"
 brew "zoxide"
 
 cask "docker"
+cask "visual-studio-code"
 EOF
