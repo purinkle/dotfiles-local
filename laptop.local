@@ -14,6 +14,7 @@ brew "rbenv"
 brew "ripgrep"
 brew "rust"
 brew "vips"
+brew "zellij"
 brew "zoxide"
 
 cask "docker"
