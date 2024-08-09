@@ -18,5 +18,6 @@ brew "zellij"
 brew "zoxide"
 
 cask "docker"
+cask "dropbox"
 cask "visual-studio-code"
 EOF
