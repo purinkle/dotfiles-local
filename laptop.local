@@ -17,6 +17,7 @@ brew "vips"
 brew "zellij"
 brew "zoxide"
 
+cask "alacritty"
 cask "docker"
 cask "dropbox"
 cask "visual-studio-code"
