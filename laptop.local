@@ -21,5 +21,6 @@ cask "1password"
 cask "alacritty"
 cask "docker"
 cask "dropbox"
+cask "spotify"
 cask "visual-studio-code"
 EOF
