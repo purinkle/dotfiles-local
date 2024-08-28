@@ -25,4 +25,5 @@ cask "spotify"
 cask "visual-studio-code"
 cask "vlc"
 cask "xournal++"
+cask "zoom"
 EOF
