@@ -19,6 +19,7 @@ brew "zoxide"
 
 cask "1password"
 cask "alacritty"
+cask "alfred"
 cask "docker"
 cask "dropbox"
 cask "font-caskaydia-mono-nerd-font"
