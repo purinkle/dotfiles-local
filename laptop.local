@@ -34,3 +34,6 @@ cask "vlc"
 cask "xournal++"
 cask "zoom"
 EOF
+
+# shellcheck source=/dev/null
+. "$HOME/.install/neovim.sh"
