@@ -2,12 +2,15 @@
 
 brew update
 brew bundle --file=- <<EOF
+tap "jesseduffield/lazygit"
+
 brew "bat"
 brew "btop"
 brew "eza"
 brew "fzf"
 brew "httpd"
 brew "jemalloc"
+brew "lazygit"
 brew "mupdf-tools"
 brew "mysql-client"
 brew "neovim"
