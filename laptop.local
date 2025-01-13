@@ -1,4 +1,5 @@
 #!/bin/sh
+# shellcheck disable=SC1091
 
 brew update
 brew bundle --file=- <<EOF
@@ -40,5 +41,5 @@ cask "xournal++"
 cask "zoom"
 EOF
 
-# shellcheck source=/dev/null
 . "$HOME/.install/neovim.sh"
+. "$HOME/.install/ruby.sh"
