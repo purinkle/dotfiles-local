@@ -17,6 +17,7 @@ brew "lazygit"
 brew "mupdf-tools"
 brew "mysql-client"
 brew "neovim"
+brew "nodenv"
 brew "rbenv"
 brew "ripgrep"
 brew "rust"
@@ -42,4 +43,5 @@ cask "zoom"
 EOF
 
 . "$HOME/.install/neovim.sh"
+. "$HOME/.install/nodenv.sh"
 . "$HOME/.install/ruby.sh"
