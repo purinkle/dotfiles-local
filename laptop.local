@@ -49,3 +49,31 @@ EOF
 if ! gh auth status > /dev/null 2>&1; then
   gh auth login
 fi
+
+if ! pgrep -xq -- "Docker"; then
+  echo "Starting Docker…"
+  open --background -a Docker
+
+  echo "Waiting for Docker to start…"
+  while ! docker info >/dev/null 2>&1; do
+    sleep 1
+  done
+
+  echo "Docker is ready!"
+fi
+
+if docker ps \
+  --filter "name=mysql8" \
+  --filter "status=running" \
+  --format '{{.Names}}' | grep -q "^mysql8$"; then
+  echo "MySQL container 'mysql8' is already running. Skipping creation."
+else
+  echo "Starting MySQL container…"
+  docker run -d \
+    --restart unless-stopped \
+    -p 3306:3306 \
+    --name=mysql8 \
+    -e MYSQL_ROOT_PASSWORD= \
+    -e MYSQL_ALLOW_EMPTY_PASSWORD=true \
+    mysql:8
+fi
