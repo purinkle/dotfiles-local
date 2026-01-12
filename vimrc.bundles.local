@@ -1,4 +1,0 @@
-" Make our colour scheme pretty.
-Plug 'NLKNguyen/papercolor-theme'
-
-Plug 'takac/vim-hardtime'
