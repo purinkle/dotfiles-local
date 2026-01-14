@@ -1,0 +1,5 @@
+#!/bin/sh
+
+brew bundle --file=- <<EOF
+brew "opensearch"
+EOF
