@@ -1,5 +1,24 @@
 #!/bin/sh
 
+brew bundle --file=- <<EOF
+brew "php"
+brew "slack-mcp-server"
+cask "1password"
+cask "1password-cli"
+cask "alacritty"
+cask "alfred"
+cask "claude-code"
+cask "cleanmymac"
+cask "dropbox"
+cask "font-caskaydia-mono-nerd-font"
+cask "google-chrome"
+cask "nordvpn"
+cask "rectangle"
+cask "slack"
+cask "spotify"
+cask "tuple"
+EOF
+
 if [ -f "$HOME/.client.local" ]; then
   fancy_echo "Running your customizations from ~/.client.local ..."
   # shellcheck disable=SC1091
