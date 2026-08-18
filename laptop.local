@@ -19,6 +19,22 @@ cask "spotify"
 cask "tuple"
 EOF
 
+# The Trello CLI is a command you run by hand. Nothing here calls it.
+#
+# Homebrew does not carry it, so it is installed as an npm package instead.
+# npm puts it beside whichever version of node asdf is currently using, which
+# ties the command to that version. Change the node version in
+# ~/.tool-versions and this has to be installed again. The `asdf reshim` step
+# is what makes the new `trello` command visible to the shell.
+#
+# Signing in is a manual step. Run `trello auth` once and finish the login in
+# a browser. The token is saved in ~/.trello-cli/, so keep a copy of it in
+# 1Password.
+if command -v npm >/dev/null 2>&1 && ! command -v trello >/dev/null 2>&1; then
+  npm install -g trello-cli
+  asdf reshim nodejs
+fi
+
 if [ -f "$HOME/.client.local" ]; then
   fancy_echo "Running your customizations from ~/.client.local ..."
   # shellcheck disable=SC1091
