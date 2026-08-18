@@ -1,6 +1,7 @@
 #!/bin/sh
 
 brew bundle --file=- <<EOF
+brew "docker-buildx"
 brew "php"
 brew "slack-mcp-server"
 cask "1password"
@@ -34,6 +35,20 @@ if command -v npm >/dev/null 2>&1 && ! command -v trello >/dev/null 2>&1; then
   npm install -g trello-cli
   asdf reshim nodejs
 fi
+
+# Buildx is the part of Docker that builds images. Kamal cannot deploy
+# without it. Installing it here is not quite enough, and the rest is still
+# done by hand. Two steps are missing.
+#
+# Homebrew puts the plugin in /opt/homebrew/lib/docker/cli-plugins. The docker
+# command does not look there, so that folder has to be listed under
+# "cliPluginsExtraDirs" in ~/.docker/config.json.
+#
+# Docker Desktop, if it was ever installed and then removed, leaves broken
+# shortcuts behind in ~/.docker/cli-plugins. Those shortcuts win over the
+# Homebrew copies, so they have to be deleted.
+#
+# Doing both of those here, safely and repeatably, is the next job.
 
 if [ -f "$HOME/.client.local" ]; then
   fancy_echo "Running your customizations from ~/.client.local ..."
