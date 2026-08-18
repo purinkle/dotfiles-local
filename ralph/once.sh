@@ -15,7 +15,29 @@ set -euo pipefail
 # run from.
 
 repo="${1:?usage: once.sh <target-repo-dir>}"
-script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Work out the real folder this script lives in, following any shortcuts on
+# the way.
+#
+# rcup puts a shortcut to this script at ~/.ralph/once.sh, but not one to
+# prompt.md, because it is told to skip every .md file. So ~/.ralph holds the
+# script and nothing else. Asking only for the folder the shortcut sits in
+# gives ~/.ralph, where prompt.md is not, and the script dies.
+#
+# The loop below swaps a shortcut for whatever it points at, over and over,
+# until it reaches the real file in this repo. Its neighbour prompt.md is then
+# right there. A shortcut can point at a relative path, so anything that is
+# not already a full path is joined to the folder the shortcut was in.
+source_path="${BASH_SOURCE[0]}"
+while [ -L "$source_path" ]; do
+  link_dir="$(cd -P "$(dirname "$source_path")" && pwd)"
+  source_path="$(readlink "$source_path")"
+  case $source_path in
+    /*) ;;
+    *) source_path="$link_dir/$source_path" ;;
+  esac
+done
+script_dir="$(cd -P "$(dirname "$source_path")" && pwd)"
 
 cd "$repo"
 
