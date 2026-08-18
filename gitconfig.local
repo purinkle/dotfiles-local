@@ -41,3 +41,18 @@
 
 [includeIf "gitdir:~/Developer/thoughtbot/hub/"]
 	path = ~/dotfiles-local/git-hub.config
+
+# Client work is set up in ~/.gitconfig.client, which is kept outside this
+# repo on purpose. This repo is public, and naming a client, saying which
+# folder their code sits in, or explaining which account reaches it are all
+# things that should not be published. Only this pointer is shared.
+#
+# Nothing breaks when that file is absent. Git ignores an include whose file
+# is not there, so a fresh machine, or one with no client work on it, carries
+# on as normal. There is nothing to comment out.
+#
+# The file is not created by rcup and lives outside the repo, so it will not
+# come back on its own. Keep a copy in 1Password. See CLAUDE.md for what goes
+# in it, and git-hub.config for the shape to copy.
+[include]
+	path = ~/.gitconfig.client

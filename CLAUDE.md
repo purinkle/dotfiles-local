@@ -55,9 +55,23 @@ One test that saves time: if the change can be staged here at all, it probably b
 
 ### Client settings are never committed
 
-This repo is public. A settings file for a client names that client, and often says something about how their code is reached, so it stays out of git altogether. Add it to `.git/info/exclude`, which is a list of things to ignore that only exists on this machine, and keep a copy in 1Password.
+This repo is public. A settings file for a client names that client, says which folder their code sits in, and often explains which account reaches it. None of that should be published, so it never enters this repo at all.
 
-The `includeIf` line that points at such a file names the client's folder, so that line stays out of git too. What can be committed is the pattern itself, and `git-hub.config` is the example to copy.
+Instead, `gitconfig.local` carries one committed pointer:
+
+```
+[include]
+	path = ~/.gitconfig.client
+```
+
+Everything about clients lives behind that pointer, outside the repo and outside rcm's reach:
+
+- `~/.gitconfig.client` lists one `includeIf` per client, matching on the folder their work sits in.
+- `~/.gitconfig.<client>` holds that client's actual settings, such as the email to commit under or the SSH host alias that reaches their code.
+
+Git ignores an include whose file is missing, so a machine with no client work needs no change and nothing has to be commented out.
+
+Neither file is created by `rcup`, and neither will come back on its own. **Keep copies in 1Password.** `git-hub.config` shows the shape to copy, and stays committed because Hub is a thoughtbot product rather than a client.
 
 ## The thoughtbot checkouts are read-only
 
