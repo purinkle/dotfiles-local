@@ -1,1 +1,13 @@
 unsetopt incappendhistory
+
+# Put ~/.bin back at the front of the list of places the shell looks for
+# commands.
+#
+# The shared config already adds ~/.bin near the front, and says in a comment
+# that it should be first. It then adds the asdf shims folder ahead of it a
+# moment later, which quietly undoes that. A script in ~/.bin sharing a name
+# with something asdf manages would be skipped.
+#
+# This file is read last, so adding it again here wins. The shell drops
+# repeats from the list, so ~/.bin moves rather than appearing twice.
+export PATH="$HOME/.bin:$PATH"
