@@ -31,5 +31,13 @@
 [commit]
 	gpgsign = true
 
+# Let the Heroku command answer git's password prompt for Heroku's own
+# servers. The password is a short-lived one the Heroku command makes on the
+# spot, so there is nothing worth saving in a password manager or a keychain.
+# Without this, pushing to a Heroku remote stops and asks for a password that
+# nobody knows.
+[credential "https://git.heroku.com"]
+	helper = !heroku git:credentials
+
 [includeIf "gitdir:~/Developer/thoughtbot/hub/"]
 	path = ~/dotfiles-local/git-hub.config
