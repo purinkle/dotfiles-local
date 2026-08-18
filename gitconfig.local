@@ -1,5 +1,18 @@
 # Personal, machine-local git config, sourced by ~/.gitconfig's `[include]`.
 # Repo-scoped overrides live in their own fragment files, wired via includeIf.
 
+# Say who is making the commits, rather than letting git work it out.
+#
+# With no name given, git falls back to the full name on the macOS account.
+# With no email given, it invents one from the login name and the computer
+# name, which is not a real address. That is why several projects have ended
+# up with a copy of these two lines of their own.
+#
+# The rules further down are more exact than this one, so work for a client
+# still gets that client's address.
+[user]
+	name = Rob Whittaker
+	email = rob@purinkle.co.uk
+
 [includeIf "gitdir:~/Developer/thoughtbot/hub/"]
 	path = ~/dotfiles-local/git-hub.config
