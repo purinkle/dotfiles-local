@@ -10,9 +10,26 @@
 #
 # The rules further down are more exact than this one, so work for a client
 # still gets that client's address.
+#
+# Signing uses the SSH key that is already unlocked for pushing, so there is
+# nothing extra to type and no second passphrase to look after. The matching
+# public key has to be added to GitHub a second time, as a signing key, under
+# Settings, then SSH and GPG keys, then New signing key. Adding it once as a
+# login key is not enough.
+#
+# The allowed signers file is a local list of which key belongs to which
+# email. Git needs it to show the signature as good in `git log`. GitHub does
+# not use it.
 [user]
 	name = Rob Whittaker
 	email = rob@purinkle.co.uk
+	signingkey = ~/.ssh/id_rsa.pub
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	allowedSignersFile = ~/.ssh/allowed_signers
+[commit]
+	gpgsign = true
 
 [includeIf "gitdir:~/Developer/thoughtbot/hub/"]
 	path = ~/dotfiles-local/git-hub.config
