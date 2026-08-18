@@ -1,0 +1,32 @@
+# Hub-only ignore file (git core.excludesfile for ~/Developer/thoughtbot/hub).
+#
+# A repo-scoped core.excludesfile REPLACES, rather than extends, the global
+# ~/.gitignore, so the global patterns are mirrored here first, then Hub's
+# personal working artifacts are added below. The shared git_template
+# .git/info/exclude (**/.claude/... runtime files) still applies independently,
+# as does Hub's own tracked .gitignore.
+
+# Mirrored from ~/.gitignore (dotfiles/gitignore):
+*.pyc
+*.sw[nop]
+.DS_Store
+.bundle
+.byebug_history
+.env
+.git/
+/bower_components/
+/log
+/node_modules/
+/tmp
+db/*.sqlite3
+log/*.log
+rerun.txt
+tmp/**/*
+/tags
+
+**/.claude/settings.local.json
+
+# Hub personal working artifacts (issue loop, PRDs, local agent rule):
+/issues/
+/prd/
+/.claude/rules/issue-tracker.md

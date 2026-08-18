@@ -1,0 +1,5 @@
+# Personal, machine-local git config, sourced by ~/.gitconfig's `[include]`.
+# Repo-scoped overrides live in their own fragment files, wired via includeIf.
+
+[includeIf "gitdir:~/Developer/thoughtbot/hub/"]
+	path = ~/dotfiles-local/git-hub.config
