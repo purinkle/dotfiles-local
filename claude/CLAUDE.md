@@ -25,6 +25,9 @@ Version controlled at `~/dotfiles-local/claude/CLAUDE.md` and linked to
   line above. No stacking makes this the normal case, not the odd one.
 - `g delete-branch <branch>` removes the branch locally and on the remote.
   `git branch -d` does half the job and leaves the remote branch behind.
+- Some repositories delete the branch themselves when a pull request merges.
+  There the remote branch is already gone, so `g delete-branch` fails on its
+  first line and stops before the local one. Finish with `git branch -d`.
 
 ## Commit messages
 
