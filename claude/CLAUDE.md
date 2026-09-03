@@ -63,6 +63,25 @@ A memory records what was true when it was written, not what is true today.
 Do not put a number, a version, a file path or a security claim into a commit
 message, a pull request or a message to a client without checking it first.
 
+## Reviewing other people's code
+
+When reviewing a branch you did not write, only the reviewed repository's own
+files bind its author. Read `CONTRIBUTING.md`, `CODING_STANDARDS.md` and
+`gitmessage` in that repository before calling anything a violation, and name
+the file each rule comes from.
+
+This file binds my branches. It does not bind anyone else's. Never raise a
+finding against an outside contributor on the strength of a rule written here,
+such as the commit title keywords or the grade 9 prose ceiling. Call it a
+preference, or leave it out. If the rule is worth enforcing there, send a
+patch to that project's standards, so the next contributor can read it before
+they start.
+
+Why this is written down: a review of thoughtbot/dotfiles#789 reported three
+hard violations, and all three came from this file. That repository publishes
+none of them and has no `CONTRIBUTING.md`. The contributor had followed every
+rule the project does publish.
+
 [tbaggery]: https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
 [gitmessage]: https://raw.githubusercontent.com/thoughtbot/dotfiles/refs/heads/main/gitmessage
 [git-commit-message]: https://raw.githubusercontent.com/joelparkerhenderson/git-commit-message/refs/heads/main/README.md
