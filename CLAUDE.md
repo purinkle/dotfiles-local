@@ -96,6 +96,22 @@ This repo has one author, and still uses pull requests for everything.
 [gitmessage]: https://raw.githubusercontent.com/thoughtbot/dotfiles/refs/heads/main/gitmessage
 [git-commit-message]: https://raw.githubusercontent.com/joelparkerhenderson/git-commit-message/refs/heads/main/README.md
 
+## Agent skills
+
+The engineering skills from the `mattpocock-skills` plugin read their per-repo settings from `docs/agents/`. Those files are notes for an agent, not shell config, so `rcup` leaves them alone.
+
+### Issue tracker
+
+Issues live in GitHub Issues on `purinkle/dotfiles-local`, driven by the `gh` CLI. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+The five default labels, each named after the role it plays. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context: one `CONTEXT.md` and one `docs/adr/` at the repo root. Neither exists yet, and that is fine. See `docs/agents/domain.md`.
+
 ## Next jobs
 
 - **Finish the buildx setup.** `laptop.local` installs `docker-buildx` and then explains two steps still done by hand. Turn those into code that can run more than once safely.
