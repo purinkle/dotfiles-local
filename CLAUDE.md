@@ -79,7 +79,7 @@ Neither file is created by `rcup`, and neither will come back on its own. **Keep
 
 Anything you want to change either starts life in this repo, or lives on a named branch that becomes a pull request. An edit left sitting in one of those checkouts is one `git checkout` away from being lost, is invisible to `rcup`, and quietly means your machine depends on something no file records.
 
-The `purinkle` account can push to `thoughtbot/dotfiles` directly, so a fork is not needed. Note that `gh` on this machine is signed in as `thoughtbot-github`, so pull requests are opened by that account while the commits are authored as `rob@thoughtbot.com`.
+The `purinkle` account can push to `thoughtbot/dotfiles` directly, so a fork is not needed. `gh` on this machine is signed in as `purinkle` too, so the same account pushes the branch and opens the pull request. Commits there are authored as `rob@thoughtbot.com`, set by a `user.email` line in each checkout's own `.git/config`.
 
 ## How changes are made here
 
