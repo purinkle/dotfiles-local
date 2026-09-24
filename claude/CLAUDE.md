@@ -52,7 +52,6 @@ came from.
   used.
 - **Measure the grade, do not guess it.** `readability` scores a file or stdin
   and exits non-zero above grade 9.
-- No em-dashes anywhere. A hook rejects them on `Write` and `Edit`.
 
 ## Claims
 

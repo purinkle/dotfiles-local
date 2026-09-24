@@ -90,7 +90,6 @@ This repo has one author, and still uses pull requests for everything.
 - Commit messages follow [tbaggery][] and the thoughtbot [gitmessage][]: a capitalised title in the imperative of 50 characters or less with no full stop, a blank line, then a body wrapped at 72 columns saying why the change was made, how it solves the problem, and any side effects.
 - The title's first word is one of the summary keywords from [git-commit-message][]: Add, Drop, Fix, Bump, Make, Start, Stop, Optimize, Document, Refactor, Reformat, Rearrange, Redraw, Reword, Revise.
 - Commit messages, code comments and any prose aim for a Flesch-Kincaid reading grade of 9 or lower. Clear beats short. Explain a term the first time it is used. Measure it rather than guessing.
-- No em-dashes anywhere. A hook rejects them.
 
 [tbaggery]: https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
 [gitmessage]: https://raw.githubusercontent.com/thoughtbot/dotfiles/refs/heads/main/gitmessage
