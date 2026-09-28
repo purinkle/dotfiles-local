@@ -22,6 +22,28 @@ The repo directory is symlinked: `~/dotfiles-local -> ~/Developer/purinkle/dotfi
 - `zshrc.local` is sourced by `thoughtbot/dotfiles/zshrc` (line 46). It loads **after** `zsh/configs/`, so it is the right place for final overrides like `unsetopt` or `PATH` prepends.
 - `client.local` is **not** part of the upstream contract. It is sourced by *this repo's own* `laptop.local` if `~/.client.local` exists, giving a third tier for per-client / work overlays on top of the personal one.
 
+### How directories here map into `$HOME`
+
+`rcm` copies a directory's shape and symlinks the files inside it. It does not
+replace the directory. So `ralph/once.sh` here becomes a symlink at
+`~/.ralph/once.sh`, and `claude/statusline-command.sh` becomes one at
+`~/.claude/statusline-command.sh`. Only the top level gains a leading dot.
+Files inside keep their own names, so the `.local` suffix below does not
+reach them.
+
+That matters for `claude/`, because `~/.claude` is a live directory. Claude
+Code keeps hundreds of megabytes of session state in it. `rcup` links the one
+file it knows about and leaves the rest alone.
+
+- `claude/statusline-command.sh` draws the status line. `~/.claude/settings.json`
+  names it by its full path, so the symlink has to land at exactly
+  `~/.claude/statusline-command.sh`. Keep the executable bit set on the repo
+  copy, because running the link runs that file, under whatever mode it has.
+- `claude/CLAUDE.md` holds the standing preferences for every project. `rcup`
+  will never link it, because `~/.rcrc` sets
+  `EXCLUDES="*.md LICENSE CODEOWNERS"`. Any Markdown in this repo needs a
+  symlink made by hand. `ralph/prompt.md` has the same problem.
+
 ## Commands
 
 ```bash
@@ -33,7 +55,7 @@ rcup
 ~/Developer/thoughtbot/laptop/mac
 ```
 
-There is no build, test, or lint tooling in this repo. Files are POSIX `sh`; if you reach for shell-checking, run `shellcheck` against the file directly.
+There is no build, test, or lint tooling in this repo. The `.local` files are POSIX `sh`, because `thoughtbot/laptop/mac` runs under `/bin/sh`. `claude/statusline-command.sh` is the exception: it is bash, and Claude Code runs it on its own. If you reach for shell-checking, run `shellcheck` against the file directly.
 
 ## Conventions when adding files
 
@@ -97,7 +119,7 @@ This repo has one author, and still uses pull requests for everything.
 
 ## Agent skills
 
-The engineering skills from the `mattpocock-skills` plugin read their per-repo settings from `docs/agents/`. Those files are notes for an agent, not shell config, so `rcup` leaves them alone.
+The engineering skills from the `mattpocock-skills` plugin read their per-repo settings from `docs/agents/`. `rcup` never links them, because `~/.rcrc` excludes Markdown, and nothing outside this repo reads them anyway.
 
 ### Issue tracker
 
