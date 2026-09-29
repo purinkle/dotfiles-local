@@ -45,14 +45,6 @@ list goes stale the moment anyone rebases. Do not put blockers or notes for the
 next session in the message either; those belong in the issue or card the work
 came from.
 
-## Prose
-
-- Commit messages, code comments and any prose aim for a Flesch-Kincaid reading
-  grade of 9 or lower. Clear beats short. Explain a term the first time it is
-  used.
-- **Measure the grade, do not guess it.** `readability` scores a file or stdin
-  and exits non-zero above grade 9.
-
 ## Claims
 
 State what you checked and how. If something is taken from a memory, a note or
@@ -71,10 +63,9 @@ the file each rule comes from.
 
 This file binds my branches. It does not bind anyone else's. Never raise a
 finding against an outside contributor on the strength of a rule written here,
-such as the commit title keywords or the grade 9 prose ceiling. Call it a
-preference, or leave it out. If the rule is worth enforcing there, send a
-patch to that project's standards, so the next contributor can read it before
-they start.
+such as the commit title keywords. Call it a preference, or leave it out. If
+the rule is worth enforcing there, send a patch to that project's standards,
+so the next contributor can read it before they start.
 
 Why this is written down: a review of thoughtbot/dotfiles#789 reported three
 hard violations, and all three came from this file. That repository publishes
